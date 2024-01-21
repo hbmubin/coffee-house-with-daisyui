@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +17,14 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
+    />
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- CUSTOM COLOR -->
     <script>
@@ -37,9 +45,94 @@
       }
     </style>
   </head>
+
   <body class="manropeFont">
-    <header></header>
-    <main></main>
+    <header>
+      <!-- NAV -->
+      <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm font-semibold dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-3xl font-extrabold">Coffee House</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-semibold">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn w-24 bg-gradient-to-r from-orange-400 to-red-600 text-white"
+              >LOGIN</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- BANNER -->
+      <div class="hero w-full">
+        <div class="hero-content w-full flex-col lg:flex-row-reverse justify-between">
+          <div class="w-7/12">
+            <img src="images/banner.png" class="w-full" />
+          </div>
+          <div class="">
+            <h1 class="text-6xl font-extrabold leading-tight">
+              It's good <br />
+              tea time at <br />
+              The Tea House
+            </h1>
+            <p class="py-6 leading-normal w-8/12 text-sm">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button
+              class="btn bg-gradient-to-r from-orange-400 to-red-600 text-white"
+            >
+              Get Started<i class="fa-solid fa-arrow-right -rotate-45"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- FEATURED SECTION -->
+      <div class="featuredSection">
+        <div class="container mx-auto">
+          <div class="featuredContent">
+            <h1 class="text-4xl font-extrabold">Our Featured Products</h1>
+            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
